@@ -1,7 +1,8 @@
 {
+  "homepage": "http://fishykiki.github.io/superChat",
   "name": "suprtchat",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
@@ -16,6 +17,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -40,6 +43,7 @@
   },
   "devDependencies": {
     "envify": "^4.1.0",
+    "gh-pages": "^5.0.0",
     "terser": "^5.16.5",
     "terser-brunch": "^4.1.0",
     "uglifyify": "^5.0.2"
